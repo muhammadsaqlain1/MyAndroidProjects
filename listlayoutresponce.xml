@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:text="Patient Name"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/llayout_tvPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView35"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/textView32"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_below="@+id/textView32"
+        android:layout_marginTop="15dp"
+        android:text="Prescription / Advice"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/llayout_tvPrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView35"
+        android:layout_below="@+id/textView35"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/llayout_tvPatientName"
+        android:layout_alignBottom="@+id/llayout_tvPatientName"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/llayout_tvPatientName"
+        android:text="Doctor"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/llayout_tvDocName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView37"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textView37"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/llayout_tvPrescription"
+        android:layout_below="@+id/llayout_tvPrescription"
+        android:layout_marginTop="9dp"
+        android:text="Medicine"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/llayout_tvmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/textView34"
+        android:text="TextView"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_below="@+id/textView34"
+        android:layout_marginTop="11dp"
+        android:text="Dose"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/llayout_tvdose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView38"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textView38"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="16sp" />
+</RelativeLayout>

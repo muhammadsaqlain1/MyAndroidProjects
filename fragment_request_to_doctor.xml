@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usman.virtualclinic.RequestToDoctorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/Req_to_patientslisttt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"></ListView>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edittextgen2"
+        android:text="Select Patient to prescribe"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

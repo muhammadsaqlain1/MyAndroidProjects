@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usman.virtualclinic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".startAppActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" >
+
+        </activity>
+        <activity android:name=".RegisterationActivity" />
+        <activity android:name=".VisitDoctorActivity" />
+        <activity android:name=".DoctorCheckPatientVisitingActivity" />
+        <activity android:name=".MedicalHistoryActivity" />
+        <activity android:name=".AdminActivity">
+
+        </activity>
+        <activity android:name=".CheckingProfileActivity" />
+        <activity android:name=".CheckingDocProfileActivity" />
+        <activity android:name=".ClinicMainActivity" >
+
+
+
+        </activity>
+        <activity android:name=".DoctorMainActivity" >
+
+
+
+        </activity>
+        <activity android:name=".Admin1Activity" />
+        <activity android:name=".PrescribeActivity" />
+        <activity android:name=".SpecialDoctorHomeActivity" >
+
+
+        </activity>
+        <activity android:name=".SpecDocCheckDoctorperformanceActivity" />
+        <activity android:name=".spec_Doc_See_Doc_Profile_Activity"></activity>
+    </application>
+
+</manifest>

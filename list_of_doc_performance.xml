@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/list_of_Doc_performence_prob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/textView22"
+        android:text="Problem Description"
+        android:textColor="#000"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/list_of_Doc_performence_prob"
+        android:layout_alignBottom="@+id/list_of_Doc_performence_prob"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:text="Problem Desc"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:layout_marginTop="7dp"
+        android:text="Prescription"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/list_of_Doc_performence_presc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView25"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignStart="@+id/list_of_Doc_performence_prob"
+
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/textView25"
+        android:layout_marginTop="10dp"
+        android:text="Medicine"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/list_of_Doc_performence_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView31"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignStart="@+id/list_of_Doc_performence_presc"
+
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    >
+
+    <ImageView
+        android:id="@+id/altertdialog_rating_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/doc"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/altertdialog_rating_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/altertdialog_rating_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="@color/LIGHTBLUE500"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/altertdialog_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/altertdialog_rating_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/altertdialog_rating_btnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/altertdialog_rating_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btngen2"
+        android:text="Rate"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

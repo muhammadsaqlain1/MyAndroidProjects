@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_column="2"
+    android:orientation="vertical"
+
+    tools:context="com.example.usman.virtualclinic.RegisterationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#42b0e1"
+        android:id="@+id/relativeLayout">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/imageButtonbackarrow"
+            android:layout_toRightOf="@+id/imageButtonbackarrow"
+            android:text="Registeration"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonbackarrow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#42b0e1"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/Doctor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Regetusername"
+
+                    style="@style/Base.V7.Widget.AppCompat.EditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/genedittext"
+                    android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="User Name"
+                    android:textColorHint="@color/GRAY600"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/regetemail"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/genedittext"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/GRAY600"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/Regetpassword"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/genedittext"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/GRAY600"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Please Select Registeration Type: "
+                    android:textColor="@color/GRAY800"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/Regtypespinner"
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+
+
+                    android:background="@drawable/genedittext" />
+
+
+                <LinearLayout
+                    android:id="@+id/fordoctor"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="DOB "
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/regDob"
+                        android:layout_width="fill_parent"
+
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/genedittext"
+
+                        android:inputType="date"></EditText>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Gender: "
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/RegGender"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/genedittext"
+
+                        ></Spinner>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Education: "
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/RegExperience"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/genedittext"
+
+                        ></Spinner>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="State: "
+                    android:textColor="@color/GRAY800"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/Regstate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/genedittext"
+                    android:tooltipText="State"
+
+                    ></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="City: "
+                    android:textColor="@color/GRAY800"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/Regcity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/genedittext"
+                    android:tooltipText="City"
+
+                    ></Spinner>
+
+                <EditText
+                    android:id="@+id/RegetLiscencee"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/genedittext"
+                    android:drawableLeft="@drawable/ic_crop_16_9_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="Liscence No"
+                    android:textColorHint="@color/GRAY600"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/RegLocation"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/genedittext"
+                    android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="Location"
+                    android:textColorHint="@color/GRAY600"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/Regphoneno"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/genedittext"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="Phone No"
+                    android:textColorHint="@color/GRAY600"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/btnimgReg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/addimage"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Upload Photo"
+                        android:textColor="@color/GRAY800"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgreg"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:visibility="gone" />
+
+
+                <Button
+
+                    android:id="@+id/btnsignupReg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/loginbutton"
+                    android:text="Register" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/RegetLiscence"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/genedittext"
+        android:drawableLeft="@drawable/ic_crop_16_9_black_24dp"
+        android:gravity="center_vertical"
+        android:hint="Liscence No"
+        android:textColorHint="@color/GRAY600"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

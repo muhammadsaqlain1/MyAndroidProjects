@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usman.virtualclinic.Admin1Activity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_weight="2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logotext"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <android.support.v4.widget.CircleImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/circleImageView"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/download"
+        android:textAlignment="textEnd" />
+
+    <android.support.v4.widget.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="221dp"
+        android:src="@drawable/doc"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/circleImageView"
+        android:layout_below="@+id/circleImageView2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Doctors"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/circleImageView2"
+        android:layout_marginEnd="25dp"
+        android:text="Clinics"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/circleImageView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/req" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="11dp"
+        android:text="Requests"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/circleImageView2"
+        android:layout_alignTop="@+id/imageView3"
+        app:srcCompat="@drawable/loogout" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="7dp"
+        android:text="Logout"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

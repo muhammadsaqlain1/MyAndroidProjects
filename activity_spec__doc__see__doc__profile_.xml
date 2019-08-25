@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usman.virtualclinic.spec_Doc_See_Doc_Profile_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#42b0e1"
+        android:id="@+id/relativeLayout2">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/imageButtonbackarrow"
+            android:layout_toRightOf="@+id/imageButtonbackarrow"
+            android:text="Doctor Profile"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonbackarrow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#42b0e1"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/Spec_Doc_c_Doc_profile_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/doc"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <TextView
+            android:id="@+id/Spec_Doc_c_Doc_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Spec_Doc_c_Doc_profile_pic"
+            android:layout_centerHorizontal="true"
+            android:text="Name"
+            android:textColor="@color/Blue500"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Spec_Doc_c_Doc_profile_name"
+            android:layout_below="@+id/Spec_Doc_c_Doc_profile_name"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="7dp"
+            android:text="No of patients treated"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Spec_Doc_c_Doc_profile_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spec_doc_rating_button"
+            android:layout_marginStart="7dp"
+            android:layout_toEndOf="@+id/Spec_Doc_c_Doc_profile_pic"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/spec_doc_rating_button"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView23"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btngen2"
+            android:text="Rate"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/spec_doc_c_list_doc_has_given_medcine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spec_doc_rating_button"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

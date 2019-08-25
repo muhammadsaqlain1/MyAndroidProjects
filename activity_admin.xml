@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="com.example.usman.virtualclinic.AdminActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logonew" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:text="Virtual"
+                android:textColor="@color/newcolor"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView40"
+                android:layout_alignBottom="@+id/textView40"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/textView40"
+                android:text="Clinic"
+                android:textColor="@color/GRAY800"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1
+"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Requests List"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Clinic / Doctor from List to check Gen info and other details"
+            android:textColor="#000"
+            android:lines="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittextgen2"
+            />
+
+        <ListView
+            android:id="@+id/AdminpageRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

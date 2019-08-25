@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.usman.virtualclinic.DoctorCheckPatientVisitingActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#42b0e1"
+            android:id="@+id/relativeLayout">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/imageButtonbackarrow"
+                android:layout_toRightOf="@+id/imageButtonbackarrow"
+                android:text="Patient Details"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButtonbackarrow"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="#42b0e1"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="110dp">
+
+            <TextView
+                android:id="@+id/Doc_check_Patient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Doc_check_Patient_age"
+                android:layout_alignStart="@+id/Doc_check_Patient_age"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Doc_check_Patient_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView45"
+                android:layout_marginEnd="63dp"
+                android:text="25 years"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Doc_check_Patient_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView46"
+                android:layout_alignStart="@+id/Doc_check_Patient_age"
+                android:text="gender"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="3dp"
+                android:layout_above="@+id/Doc_check_Patient_name"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/edittextgen2"
+                android:text="Gen Info about patient"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Doc_check_Patient_name"
+                android:layout_alignBottom="@+id/Doc_check_Patient_name"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView46"
+                android:layout_alignStart="@+id/textView44"
+                android:text="Age"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView45"
+                android:layout_marginBottom="14dp"
+                android:text="Gender"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/edittextgen2"
+            android:text="Observations by Clinic"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Blood Pressure"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_BP_stolic"
+                    android:layout_width="60dp"
+
+                    android:layout_height="25dp"
+                    android:background="@drawable/edittextgen2"
+                    android:gravity="center_vertical"
+                    android:hint="Stolic"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/GRAY800" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stolic"
+                    />
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_BP-dicstolic"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/edittextgen2"
+                    android:gravity="center_vertical"
+                    android:hint="Distolic"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/GRAY800" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distolic"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Temperature"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_temprature"
+                    android:layout_width="60dp"
+
+                    android:layout_height="25dp"
+                    android:background="@drawable/edittextgen2"
+                    android:gravity="center_vertical"
+                    android:hint="Fahrenheit"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/GRAY800" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fahrenheit" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Pulse"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_pulse"
+                    android:layout_width="60dp"
+
+                    android:layout_height="25dp"
+                    android:background="@drawable/edittextgen2"
+                    android:gravity="center_vertical"
+                    android:hint="bpm"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/GRAY800" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bpm"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Breath Rate"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_BR"
+                    android:layout_width="60dp"
+
+                    android:layout_height="25dp"
+                    android:background="@drawable/edittextgen2"
+                    android:gravity="center_vertical"
+                    android:hint="BPM"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/GRAY800" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Sugar Level"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_sugar"
+                    android:layout_width="60dp"
+
+                    android:layout_height="25dp"
+                    android:background="@drawable/edittextgen2"
+                    android:gravity="center_vertical"
+                    android:hint="mmol"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/GRAY800" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mmol"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="Weight"
+                    android:textColor="#000000" />
+
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_weight"
+                    android:layout_width="60dp"
+
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="38dp"
+                    android:layout_toEndOf="@+id/textView12"
+                    android:background="@drawable/edittextgen2"
+                    android:gravity="center_vertical"
+                    android:hint="Kg"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/GRAY800" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kg"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:text="Problem Description"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/Doc_check_Patient_problem_description"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:hint="Description"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/GRAY800"
+                    android:background="@drawable/edittextgen2"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:text="Medical Histroy"
+                    android:textAllCaps="false"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/Doc_check_patient_Med_history"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView12"
+                    android:layout_marginStart="16dp"
+                    app:srcCompat="@drawable/history" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_toEndOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/Doc_Check_Patient_RX_Presc"
+                    android:layout_alignParentTop="true"
+                    android:text="Prescribe"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/Doc_Check_Patient_RX_Presc"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textView14"
+                    android:layout_marginEnd="63dp"
+                    app:srcCompat="@drawable/rx" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+    </LinearLayout>

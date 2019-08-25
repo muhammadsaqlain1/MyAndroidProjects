@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/med_his_prob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView30"
+            android:layout_centerHorizontal="true"
+
+            android:text="problem"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="Problem"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/med_his_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_below="@+id/textView30"
+            android:layout_marginTop="10dp"
+            android:text="Diagnosed"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/med_his_diagnose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/med_his_"
+            android:layout_alignBottom="@+id/med_his_"
+            android:layout_alignStart="@+id/med_his_prob"
+
+            android:text="diagnosed"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/med_his_"
+            android:layout_below="@+id/med_his_diagnose"
+            android:layout_marginTop="7dp"
+            android:text="RX Medicine"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/med_his_medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/med_his_diagnose"
+            android:layout_alignTop="@+id/textView33"
+
+            android:text="TextView"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>

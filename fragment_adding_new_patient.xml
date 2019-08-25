@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.usman.virtualclinic.AddingNewPatientFragment">
+
+
+    <LinearLayout
+        android:id="@+id/NEWPATIENT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+
+        >
+
+        <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_new_patient_name"
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/genedittext"
+
+            android:gravity="center_vertical"
+            android:hint="Name"
+            android:textColorHint="@color/GRAY600"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Gender "
+            android:textColor="#000"
+
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/add_new_patient_gender"
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/genedittext"></Spinner>
+
+
+        <EditText
+            android:id="@+id/add_new_patient_DOB"
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/genedittext"
+
+            android:gravity="center_vertical"
+            android:hint="DOB"
+            android:textColorHint="@color/GRAY600"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/add_new_patient_cnic"
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/genedittext"
+
+            android:gravity="center_vertical"
+            android:hint="CNIC"
+            android:textColorHint="@color/GRAY600"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/add_new_patient_contact"
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/genedittext"
+
+            android:gravity="center_vertical"
+            android:hint="Contact"
+            android:textColorHint="@color/GRAY600"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/add_new_patient_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/addimage"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Upload Picture"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_new_patient_uploadimage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+
+        <Button
+
+            android:id="@+id/add_new_patient_btn_addpatient"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/loginbutton"
+            android:text="Add Patient"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

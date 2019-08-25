@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.usman.virtualclinic.CheckingDocProfileActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+        <RelativeLayout
+
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            >
+
+            <ImageView
+                android:id="@+id/Doc_profile_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="41dp"
+
+                android:src="@drawable/diagnostic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Doc_profile_picture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:text="Name"
+                android:textColor="@color/LIGHTBLUE500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Gender"
+                android:gravity="center_vertical"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:hint="Male / Female"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/GRAY800"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="Education"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:gravity="center_vertical"
+                android:hint="MBBS"
+                android:paddingLeft="20dp"
+                android:textColor="@color/GRAY800" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="CNIC"
+                android:gravity="center_vertical"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:hint="3740........."
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/GRAY800"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="City"
+                android:gravity="center_vertical"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:hint="Rawalpindi"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/GRAY800"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="State:"
+                android:gravity="center_vertical"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:hint="Punjab"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/GRAY800"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Contact"
+                android:gravity="center_vertical"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:hint="03................"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/GRAY800"/>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Liscence No."
+                android:gravity="center_vertical"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:hint="Lisence No"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/GRAY800"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/loginbutton"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
